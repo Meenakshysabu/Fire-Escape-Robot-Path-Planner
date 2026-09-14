@@ -1,45 +1,45 @@
-# 🔥 Fire Escape Robot Path Planner
+#### 🔥 Fire Escape Robot Path Planner
 
 An intelligent **Fire Escape Robot Path Planner** that simulates a robot navigating through a building while avoiding dynamically spreading fire and finding a safe route to an exit.
 
 The project combines **A* pathfinding, dynamic fire simulation, heat-aware navigation, and a Tkinter-based visual interface** to demonstrate how an autonomous robot can make escape decisions in a dangerous environment.
 
-## 🚀 Features
+### 🚀 Features
 
-* 🤖 **Autonomous Robot Navigation**
+ #🤖Autonomous Robot Navigation
 
   * Simulates a robot moving through a building.
   * Finds routes from the starting position to available exits.
 
-* 🔥 **Dynamic Fire Simulation**
+ #🔥Dynamic Fire Simulation
 
   * Fire spreads across the building over time.
   * Fire spread is probabilistic and changes the environment dynamically.
   * Fire can spread through neighboring cells and create complex scenarios.
 
-* 🧠 **Heat-Aware A* Pathfinding**
+#🧠 Heat-Aware A* Pathfinding
 
   * Uses the A* algorithm to find efficient paths.
   * Considers fire and heat when selecting a route.
   * Avoids dangerous cells whenever possible.
 
-* 🛡️ **Fire Avoidance**
+#🛡️ Fire Avoidance
 
   * Checks whether the next robot position is safe.
   * Considers nearby fire when evaluating paths.
   * Can switch to alternative routes when the current path becomes unsafe.
 
-* 🚪 **Multiple Exit Selection**
+#🚪Multiple Exit Selection
 
   * Supports multiple exits in the building.
   * Can select an exit based on distance and safety.
 
-* 🆘 **Emergency Escape**
+#🆘Emergency Escape
 
   * If a normal safe route cannot be found, the planner attempts an emergency escape route.
   * Can allow high-cost fire cells as a last-resort strategy.
 
-* 🖥️ **Interactive GUI**
+#🖥️ Interactive GUI
 
   * Built using Tkinter.
   * Visualizes the building, robot, fire, exits, and movement.
@@ -47,19 +47,21 @@ The project combines **A* pathfinding, dynamic fire simulation, heat-aware navig
 
 ## 🧩 Technologies Used
 
-* **Python**
-* **NumPy**
-* **Tkinter**
-* **Pillow (PIL)**
-* **OpenCV**
-* **Matplotlib**
-* **MSS**
-* **A* Pathfinding Algorithm**
+* Python
+* NumPy
+* Tkinter
+* Pillow (PIL)
+* OpenCV
+* Matplotlib
+* MSS
+* A* Pathfinding Algorithm
 
-## 📁 Project Structure
+### 📁 Project Structure
 
-```text
 Fire-Escape-Robot-Path-Planner/
+│
+├── README.md
+├── requirements.txt
 │
 ├── assets/
 │   ├── robot.png
@@ -69,17 +71,15 @@ Fire-Escape-Robot-Path-Planner/
 ├── Map/
 │   └── building_map.txt
 │
-├── src/
-│   ├── cell_types.py
-│   ├── fire.py
-│   ├── grid.py
-│   ├── heat_aware_astar.py
-│   ├── heat_aware_astar_improved.py
-│   ├── planner.py
-│   └── gui_tkinter_building.py
-│
-└── README.md
-```
+└── src/
+    ├── cell_types.py
+    ├── fire.py
+    ├── grid.py
+    ├── heat_aware_astar.py
+    ├── heat_aware_astar_improved.py
+    ├── planner.py
+    └── gui_tkinter_building.py
+
 
 ## 🗺️ Building Map
 
@@ -95,19 +95,19 @@ The building is represented using an ASCII-based map.
 
 Example:
 
-```text
+
 ###########################E##################
 #.....#.....#.....#.....#.....#.....#.....#..#
 #.###.#.###.#.###.#.###.#.###.#.###.#.###.#..#
 #.T.#.#.T.#.#.F.#.#.T.#.#.T.#.#.F.#.#.F.#.#S.#
 E...#.....#.....#.....#.....#.....#.....#....#
-```
+
 
 The map is loaded and converted into a numerical grid before the simulation begins.
 
 ## 🧠 How It Works
 
-The project works in several stages:
+The project works in several stages.
 
 ### 1. Load the Building
 
@@ -134,7 +134,7 @@ Cells closer to fire can receive higher costs, encouraging the robot to stay awa
 
 ### 4. Find a Path
 
-The planner uses an **A* search algorithm** to find a route to an exit.
+The planner uses an **A*** search algorithm to find a route to an exit.
 
 Instead of considering only distance, the planner can also consider:
 
@@ -214,7 +214,7 @@ cd Fire-Escape-Robot-Path-Planner
 ### 3. Install Dependencies
 
 ```bash
-pip install numpy pillow opencv-python matplotlib mss
+pip install -r requirements.txt
 ```
 
 > Tkinter is normally included with Python on Windows. If it is not available on your system, install the appropriate Tk/Tcl package for your operating system.
@@ -264,4 +264,3 @@ This concept can be extended to real-world applications such as:
 * 🚨 Disaster-response systems
 * 🧭 Dynamic obstacle navigation
 * 🏥 Emergency evacuation planning
-
