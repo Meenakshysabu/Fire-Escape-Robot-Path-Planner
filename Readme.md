@@ -1,29 +1,29 @@
-## 🔥 Fire Escape Robot Path Planner
+# 🔥 Fire Escape Robot Path Planner
 
 An intelligent **Fire Escape Robot Path Planner** that simulates a robot navigating through a building while avoiding dynamically spreading fire and finding a safe route to an exit.
 
 The project combines **A* pathfinding, dynamic fire simulation, heat-aware navigation, and a Tkinter-based visual interface** to demonstrate how an autonomous robot can make escape decisions in a dangerous environment.
 
-### 🚀 Features
+## 🚀 Features
 
- #🤖Autonomous Robot Navigation
+ 🤖Autonomous Robot Navigation
 
   * Simulates a robot moving through a building.
   * Finds routes from the starting position to available exits.
 
- #🔥Dynamic Fire Simulation
+ 🔥Dynamic Fire Simulation
 
   * Fire spreads across the building over time.
   * Fire spread is probabilistic and changes the environment dynamically.
   * Fire can spread through neighboring cells and create complex scenarios.
 
-#🧠 Heat-Aware A* Pathfinding
+🧠 Heat-Aware A* Pathfinding
 
   * Uses the A* algorithm to find efficient paths.
   * Considers fire and heat when selecting a route.
   * Avoids dangerous cells whenever possible.
 
-#🛡️ Fire Avoidance
+🛡️ Fire Avoidance
 
   * Checks whether the next robot position is safe.
   * Considers nearby fire when evaluating paths.
@@ -34,12 +34,12 @@ The project combines **A* pathfinding, dynamic fire simulation, heat-aware navig
   * Supports multiple exits in the building.
   * Can select an exit based on distance and safety.
 
-#🆘Emergency Escape
+🆘Emergency Escape
 
   * If a normal safe route cannot be found, the planner attempts an emergency escape route.
   * Can allow high-cost fire cells as a last-resort strategy.
 
-#🖥️ Interactive GUI
+🖥️ Interactive GUI
 
   * Built using Tkinter.
   * Visualizes the building, robot, fire, exits, and movement.
