@@ -1,4 +1,4 @@
-#### 🔥 Fire Escape Robot Path Planner
+## 🔥 Fire Escape Robot Path Planner
 
 An intelligent **Fire Escape Robot Path Planner** that simulates a robot navigating through a building while avoiding dynamically spreading fire and finding a safe route to an exit.
 
